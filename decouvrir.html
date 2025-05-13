@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Histoire de Barbie - Barbie Dream World</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Barbie Dream World</div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#galerie">Galerie</a></li>
+        <li><a href="index.html#inscription">Inscription</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="btn-theme-toggle" aria-label="Changer le thème">🌸</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="histoire" class="histoire-section">
+      <h1>L'histoire de Barbie</h1>
+      <img src="barbieancienne.jpg" alt="Barbie ancienne" style="max-width:250px; border-radius:10px; margin-bottom: 20px;">
+      <p><strong>Barbie</strong> a été créée en 1959 par <strong>Ruth Handler</strong>, cofondatrice de Mattel, aux États-Unis.</p>
+      <p>Son idée était d’offrir aux petites filles une poupée qui leur permettrait d’imaginer leur avenir autrement qu’en jouant à la maman.</p>
+      <ul style="text-align:left; max-width:400px; margin: 20px auto;">
+        <li><strong>Date de création :</strong> 9 mars 1959</li>
+        <li><strong>Créatrice :</strong> Ruth Handler</li>
+        <li><strong>Entreprise :</strong> Mattel</li>
+        <li><strong>Première apparition :</strong> Foire du jouet de New York</li>
+      </ul>
+      <p>Depuis, Barbie est devenue une icône mondiale, symbole de mode, d’ambition et d’indépendance.</p>
+      <p>Elle a exercé plus de 200 métiers, voyagé dans l’espace, et inspiré des générations entières !</p>
+      <a href="index.html#accueil" class="btn btn-primary">Retour à l'accueil</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barbie Dream World - Sofia, Lina & Radia</p>
+  </footer>
+
+  <script>
+    // Thème clair/sombre toggle (copie aussi ce script depuis ta page principale)
+    const btnThemeToggle = document.querySelector('.btn-theme-toggle');
+    if (btnThemeToggle) {
+      btnThemeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        btnThemeToggle.textContent = document.body.classList.contains('dark-theme') ? '🌙' : '🌸';
+      });
+    }
+  </script>
+</body>
+</html>
